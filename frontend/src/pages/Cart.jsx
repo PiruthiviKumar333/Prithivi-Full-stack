@@ -43,7 +43,7 @@ const Cart = ({cartItems , setCartItems}) => {
     const [complete,setComplete] = useState(false)
 
     function placeOrderHandler(){
-        fetch("https://full-stack-project-8zuy.onrender.com/api/v1/order",{
+        fetch("https://prithivi-full-stack.onrender.com/api/v1/order",{
             method:"POST",
             headers:{'Content-Type':'application/json'},
             body:JSON.stringify(cartItems)

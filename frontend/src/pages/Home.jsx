@@ -8,7 +8,7 @@ const Home = () => {
     const [products,setProducts] = useState([])
     const [searchParams,setSearchParams] = useSearchParams()
     useEffect(()=>{
-        fetch("https://full-stack-project-8zuy.onrender.com/api/v1/products?"+searchParams).then((res)=>res.json()).then((msg)=>setProducts(msg.products))
+        fetch("https://prithivi-full-stack.onrender.com/api/v1/products?"+searchParams).then((res)=>res.json()).then((msg)=>setProducts(msg.products))
     },[searchParams])
     // console.log(searchParams)
   return (

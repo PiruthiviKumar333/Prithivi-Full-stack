@@ -9,7 +9,7 @@ const ProductDetail = ({cartItems , setCartItems}) => {
     const [qty , setQty] = useState(1)
 
     useEffect(()=>{
-        fetch("https://full-stack-project-8zuy.onrender.com/api/v1/product/"+id).then((res)=>res.json()).then((msg)=>setProduct(msg["product"]))
+        fetch("https://prithivi-full-stack.onrender.com/api/v1/product/"+id).then((res)=>res.json()).then((msg)=>setProduct(msg["product"]))
     },[])
     function AddtoCart(){
         const existItems = cartItems.find((item)=> item.product._id===product._id)
