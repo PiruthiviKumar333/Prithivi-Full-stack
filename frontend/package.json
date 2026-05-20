@@ -1,4 +1,4 @@
-{
+echo "node_modules/" > backend\.gitignore{
   "name": "frontend",
   "private": true,
   "version": "0.0.0",
